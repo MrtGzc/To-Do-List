@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card m-2">
+        <div class="card-header">Todo List</div>
+        <div class="card-body" id="getInput">
+          <form>
+            <div class="mb-3 w-50 m-3">
+              <input type="text" class="form-control" id="todo-input" placeholder="Lütfen Bir Todo Girin">
+            </div>
+            <button type="submit" class="btn btn-danger m-3">Todo Ekleyin</button>
+          </form>
+
+          
+        </div>
+        <hr style="margin: 0px auto; width: 95%;">
+        <div class="card-body">
+          <h5 class="m-2 p-2">Todolar</h5>
+          <form>
+            <div class="mb-3 w-50 m-3">
+              <input type="text" class="form-control " id="todo-search" placeholder="Aranacak Todo Girin">
+            </div>
+          </form>
+        </div>
+        <div class="card-body">
+          <ul class="list-group mt-3 p-2" id="ul">
+          </ul>
+          <button type="submit" class="btn btn-secondary mt-3" id="deleteAllTodos" style="margin-left: .5rem;">Tüm Todoları Temizle</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="javaScript.js"></script>
+  </body>
+</html>
